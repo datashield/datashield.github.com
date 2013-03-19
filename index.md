@@ -7,6 +7,8 @@ tagline: Data Aggregation Through Anonymous Summary-statistics from Harmonized I
 
 Data synthesis is often most effective if it is based on an analysis of individual-level data pooled across contributing studies rather than on a conventional meta-analysis of study-level summary statistics. But valid ethico-legal constraints often prohibit or discourage the sharing of individual-level data. DataSHIELD provides a novel approach to data synthesis, based on parallel processing and distributed computing, that circumvents this conflict.
 
+![DataSHIELD](http://www.p3gobservatory.org:8080/images/dataShield.png "DataSHIELD")
+
 ## Background
 
 Contemporary bioscience often demands vast sample sizes and there may be no choice but to synthesise data across several studies and to undertake an appropriate pooled analysis. This same need is also faced in health-services and socio-economic research. When a pooled analysis is required, analytic efficiency and flexibility are often best served by combining the individual-level data from all sources and analysing them as a single large data set. But ethico-legal constraints, including the wording of consent forms and privacy legislation, often prohibit or discourage the sharing of individual-level data, particularly across national or other jurisdictional boundaries. This leads to a fundamental conflict in competing public goods: individual-level analysis is desirable from a scientific perspective, but is often hindered or proscribed by ethico-legal considerations that are both important and valid.
