@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: DataSHIELD!
+tagline: Data Aggregation Through Anonymous Summary-statistics from Harmonized Individual-levEL Databases
 ---
 {% include JB/setup %}
 
