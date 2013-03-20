@@ -100,4 +100,13 @@ DataSHIELD R packages have some specific `DESCRIPTION` file entries:
 * AggregateMethods
 * AssignMethods
 
-See example: [dsbase DESCRIPTION file](https://github.com/datashield/dsbase/blob/master/DESCRIPTION)
+Example of [dsbase DESCRIPTION file](https://github.com/datashield/dsbase/blob/master/DESCRIPTION):
+
+	...
+	AggregateMethods: summary, length=base::length, matrix=base::matrix,
+    	colnames=base::colnames, mean, var, lm.ds, glm.ds, histogram.1
+	AssignMethods: log=base::log, exp=base::exp, sum, product,
+    	as.list=base::as.list, as.numeric=base::as.numeric,
+    	as.matrix=base::as.matrix, complete.cases=stats::complete.cases,
+    	c=base::c, cbind=base::cbind
+    ...
