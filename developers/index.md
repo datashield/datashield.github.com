@@ -12,7 +12,7 @@ group: navigation
   * [Server side set up](#serversetup)
   * [Client side set up](#clientsetup)
 * [Development Workflow](#flow)
-* [DataSHIELD R Packages](#packages)
+* [DataSHIELD-R Packages](#packages)
 
 <a name="setup"> </a>
 ## Set up
@@ -59,7 +59,7 @@ From a R console you will need to be able to connect to Opal. This requires to i
 
 As a developer you will need to access to some advanced features of Opal, in order to perform batch administration of Opals' DataSHIELD configuration from a R console. This requires to install a Opal Administration R Client (*opaladmin* R package).
 
-	install.packages('opaladmin', repos=c('http://cran.obiba.org'), dependencies=TRUE)
+	install.packages('opaladmin', repos=c(getOption('repos'), 'http://cran.obiba.org'), dependencies=TRUE)
 
 See: [Opal R Client Set Up](http://wiki.obiba.org/display/OPALDOC/Opal+R+and+DataSHIELD+User+Guide#OpalRandDataSHIELDUserGuide-ClientsideInstallation)
 
@@ -75,11 +75,11 @@ Where the repositories are:
 * [DataSHIELD package repository](http://cran.obiba.org/src/contrib)
 
 The software development flow is:
-1. checkout code from source repository: `git clone`, `git pull`,
+1. checkout code from source repository: `git clone`, `git pull`, etc.,
 2. repeat until done:
   * edit code,
   * test.
-3. commit code changes: `git commit`, `git push`.
+3. commit code changes: `git commit`, `git push`, etc..
 
 At the end of a DataSHIELD development iteration, 2 packages are produced:
 * a [DataSHIELD-R package](#packages), holding aggregation and assignment methods, to be deployed on R server,
@@ -89,16 +89,19 @@ In [DataSHIELD source repository](https://github.com/datashield) you will find a
 
 
 <a name="packages"> </a>
-## DataSHIELD R Packages
+## DataSHIELD-R Packages
 
-DataSHIELD R packages follow the conventions of R packages. These conventions are extensively described in [Writing R Extensions](http://cran.r-project.org/doc/manuals/R-exts.html) document.
+By *DataSHIELD-R package* we define a R package which is meant to be installed in R server for performing DataSHIELD data aggregation and assignment.
 
+DataSHIELD-R packages follow the conventions of R packages. These conventions are extensively described in [Writing R Extensions](http://cran.r-project.org/doc/manuals/R-exts.html) document. The `DESCRIPTION` file in R packages is a set of key-value pairs that describe the package. It is used for describing its name, description, dependencies etc.
 
-The `DESCRIPTION` file in R packages is a set of key-pair values that describes the package. It is used for describing its name, description, dependencies etc.
-
-DataSHIELD R packages have some specific `DESCRIPTION` file entries:
+DataSHIELD-R packages have some specific `DESCRIPTION` file entries:
 * AggregateMethods
 * AssignMethods
+
+These entries describe which DataSHIELD aggregation and/or assignment methods are made visible to DataSHIELD clients. The values consist of a list of comma separated method names, optionaly mapped to a package specific method:
+* if the method name is provided alone, it will be mapped to its DataSHIELD-R package specific name. For instance when [dsbase](https://github.com/datashield/dsbase) package declares a `summary` method it is mapped to `dsbase::summary`: a DataSHIELD client calling `summary` will execute `dsbase::summary` on server side,
+* else if the method name is provided with a map to a specific method (which can be found in any package available in the R server), the corresponding method will be published. For instance declaring `log=base::log` will make DataSHIELD client execute `base::log` on R server when `log` is called.
 
 Example of [dsbase DESCRIPTION file](https://github.com/datashield/dsbase/blob/master/DESCRIPTION):
 
