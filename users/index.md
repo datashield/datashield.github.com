@@ -48,18 +48,14 @@ You can also use R to administrate one or several Opal servers DataSHIELD config
 
 All the functions starting with `dsadmin.` are meant to administer DataSHIELD configuration. The following example installs a DataSHIELD-R package and publish its methods:
 
-	#
-	# Install dsbase package on R server
-	#
-
+	# Login in Opal
 	library(opaladmin)
 	o<-opal.login('dsadmin', 'password', 'https://some-opal-host:8443',opts=list(ssl.verifyhost=0,ssl.verifypeer=0,sslversion=3))
-	dsadmin.install_package(o, 'dsbase', ref='master')
 
-	#
+	# Install dsbase package on R server
+	dsadmin.install_package(o, 'dsbase')
+
 	# Configure datashield methods in opal
-	#
-
 	# Clean all methods
 	dsadmin.rm_methods(o)
 	# Publish dsbase package methods
@@ -69,7 +65,7 @@ All the functions starting with `dsadmin.` are meant to administer DataSHIELD co
 <a name="user"> </a>
 ## DataSHIELD User
 
-Data
+DataSHIELD users will connect to a set of Opals and perform some DataSHIELD analysis.
 
 <a name="clientsetup"> </a>
 ### Prerequisites
@@ -78,18 +74,24 @@ R must be installed on the client side.
 
 See: [Download and Install R](http://cran.r-project.org/)
 
-A dataset harmonized with other datasets deployed in other Opal servers must have been uploaded.
+A dataset harmonized with other datasets deployed in different Opal servers must have been uploaded. At least 'View dictionary and summaries' is granted to the user on the corresponding tables in each Opal server.
 
-See: [Opal Web Application User Guide](http://wiki.obiba.org/display/OPALDOCDEV/Opal+Web+Application+User+Guide)
+See: 
+* [Import Data in Opal](http://wiki.obiba.org/display/OPALDOC/Working+with+Datasources#WorkingwithDatasources-ImportData)
+* [Table Permissions in Opal](http://wiki.obiba.org/display/OPALDOC/Table+Details#TableDetails-Permissions)
 
 <a name="clientusage"> </a>
 ### Usage
 
-From a R console you will need install the DataSHIELD client package you are interested in. For instance [dsbaseclient](https://github.com/datashield/dsbaseclient):
+From a R console you will need to install the DataSHIELD client package you are interested in. For instance [dsbaseclient](https://github.com/datashield/dsbaseclient):
 
 	install.packages('dsbaseclient', repos=c(getOption('repos'), 'http://cran.obiba.org'), dependencies=TRUE)
 
 Windows users will have to explicitly install package dependencies.
 
 See: [Opal R Client Set Up](http://wiki.obiba.org/display/OPALDOC/Opal+R+and+DataSHIELD+User+Guide#OpalRandDataSHIELDUserGuide-ClientsideInstallation)
+
+Then follow instructions to perform DataSHIELD analysis within Opal.
+
+See: [Opal DataSHIELD Usage](http://wiki.obiba.org/display/OPALDOCDEV/Opal+R+and+DataSHIELD+User+Guide#OpalRandDataSHIELDUserGuide-DataSHIELDUsage)
 

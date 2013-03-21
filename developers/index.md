@@ -12,7 +12,9 @@ group: navigation
   * [Server side set up](#serversetup)
   * [Client side set up](#clientsetup)
 * [Development Workflow](#flow)
-* [DataSHIELD-R Packages](#packages)
+* [R Development Guidelines](#dev)
+  * [DataSHIELD-R Packages](#packages)
+  * [Code Documentation](#codedocumentation)
 
 <a name="setup"> </a>
 ## Set up
@@ -89,8 +91,11 @@ At the end of a DataSHIELD development iteration, 2 packages are produced:
 In [DataSHIELD source repository](https://github.com/datashield) you will find a repository per R package. Some packages are meant to be deployed on server side and others on client side. An example of DataSHIELD R package for server side is [dsbase](https://github.com/datashield/dsbase). Its client side counter part is [dsbaseclient](https://github.com/datashield/dsbaseclient).
 
 
+<a name="dev"> </a>
+## R Development Guidelines
+
 <a name="packages"> </a>
-## DataSHIELD-R Packages
+### DataSHIELD-R Packages
 
 By *DataSHIELD-R package* we define a R package which is meant to be installed in R server for performing DataSHIELD data aggregation and assignment.
 
@@ -106,11 +111,20 @@ These entries describe which DataSHIELD aggregation and/or assignment methods ar
 
 Example of [dsbase DESCRIPTION file](https://github.com/datashield/dsbase/blob/master/DESCRIPTION):
 
-	...
-	AggregateMethods: summary, length=base::length, matrix=base::matrix,
-    	colnames=base::colnames, mean, var, lm.ds, glm.ds, histogram.1
-	AssignMethods: log=base::log, exp=base::exp, sum, product,
-    	as.list=base::as.list, as.numeric=base::as.numeric,
-    	as.matrix=base::as.matrix, complete.cases=stats::complete.cases,
-    	c=base::c, cbind=base::cbind
+  ...
+  AggregateMethods: summary, length=base::length, matrix=base::matrix,
+      colnames=base::colnames, mean, var, lm.ds, glm.ds, histogram.1
+  AssignMethods: log=base::log, exp=base::exp, sum, product,
+      as.list=base::as.list, as.numeric=base::as.numeric,
+      as.matrix=base::as.matrix, complete.cases=stats::complete.cases,
+      c=base::c, cbind=base::cbind
     ...
+
+<a name="codedocumentation"> </a>
+### Code Documentation
+
+Use [roxygen](http://roxygen.org) annotations to document your R code. Roxygen will:
+* generate the R manual pages,
+* generate entries in the `NAMESPACE` file with the correct *export* directives.
+
+See: [Roxygen Manual](http://roxygen.org/roxygen2-manual.pdf)
