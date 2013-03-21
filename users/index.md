@@ -42,7 +42,7 @@ See:
 * [DataSHIELD Packages Administration in Opal](http://wiki.obiba.org/display/OPALDOC/DataSHIELD+Administration#DataSHIELDAdministration-Packages)
 * [DataSHIELD Methods Administration in Opal](http://wiki.obiba.org/display/OPALDOC/DataSHIELD+Administration#DataSHIELDAdministration-Methods)
 
-You can also use R to administrate one or several Opal servers DataSHIELD configurations: `opaladmin` R package provides the Opal administration toolbox.
+You can also use R to administrate one or several Opal servers DataSHIELD configurations: *opaladmin* R package provides the Opal administration toolbox.
 
 	install.packages('opaladmin', repos=c(getOption('repos'), 'http://cran.obiba.org'), dependencies=TRUE)
 

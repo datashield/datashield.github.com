@@ -75,11 +75,12 @@ Where the repositories are:
 * [DataSHIELD package repository](http://cran.obiba.org/src/contrib)
 
 The software development flow is:
-1. checkout code from source repository: `git clone`, `git pull`, etc.,
+1. checkout code from source repository: `git clone`, `git pull`, etc.
 2. repeat until done:
   * edit code,
   * test.
-3. commit code changes: `git commit`, `git push`, etc..
+3. commit code changes: `git commit`, `git push`, etc.
+4. tag code, build package and deploy it to the package repository.
 
 At the end of a DataSHIELD development iteration, 2 packages are produced:
 * a [DataSHIELD-R package](#packages), holding aggregation and assignment methods, to be deployed on R server,
