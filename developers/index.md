@@ -111,14 +111,14 @@ These entries describe which DataSHIELD aggregation and/or assignment methods ar
 
 Example of [dsbase DESCRIPTION file](https://github.com/datashield/dsbase/blob/master/DESCRIPTION):
 
-  ...
-  AggregateMethods: summary, length=base::length, matrix=base::matrix,
-      colnames=base::colnames, mean, var, lm.ds, glm.ds, histogram.1
-  AssignMethods: log=base::log, exp=base::exp, sum, product,
-      as.list=base::as.list, as.numeric=base::as.numeric,
-      as.matrix=base::as.matrix, complete.cases=stats::complete.cases,
-      c=base::c, cbind=base::cbind
-    ...
+	...
+	AggregateMethods: summary, length=base::length, matrix=base::matrix,
+		colnames=base::colnames, mean, var, lm.ds, glm.ds, histogram.1
+	AssignMethods: log=base::log, exp=base::exp, sum, product,
+		as.list=base::as.list, as.numeric=base::as.numeric,
+		as.matrix=base::as.matrix, complete.cases=stats::complete.cases,
+		c=base::c, cbind=base::cbind
+	...
 
 <a name="codedocumentation"> </a>
 ### Code Documentation
