@@ -1,8 +1,7 @@
 ---
 layout: page
-title: "Developers"
-tagline: "DataSHIELD Developers Documentation"
-group: navigation
+title: "Developers Documentation"
+tagline: "How to contribute to DataSHIELD"
 ---
 {% include JB/setup %}
 
