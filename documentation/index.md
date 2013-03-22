@@ -14,3 +14,6 @@ You are a DataSHIELD user, in charge of performing distributed statistical analy
 
 You are a developer, willing to contribute to DataSHIELD code: 
 [DataSHIELD Developers Documentation](developers.html).
+
+
+![DataSHIELD Opal](../images/datashield-setup.png "DataSHIELD Opal")
