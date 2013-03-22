@@ -101,9 +101,11 @@ In [DataSHIELD source repository](https://github.com/datashield) you will find a
 
 Create a RStudio project from the R package source code.
 
-See: [Developing Packages with RStudio](http://www.rstudio.com/ide/docs/packages/overview)
+See: 
+* [RStudio Package Development Prerequisites](http://www.rstudio.com/ide/docs/packages/prerequisites)
+* [Developing Packages with RStudio](http://www.rstudio.com/ide/docs/packages/overview)
 
-Use [roxygen](http://roxygen.org) annotations to document your R code. The corresponding R package name is *roxygen2*. Roxygen will:
+Use [Roxygen](http://roxygen.org) annotations to document your R code. The corresponding R package name is *roxygen2*. Roxygen will:
 * generate the R manual pages,
 * generate entries in the `NAMESPACE` and `DESCRIPTION` files.
 
