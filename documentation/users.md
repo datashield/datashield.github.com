@@ -42,5 +42,5 @@ See: [Opal R Client Set Up](http://wiki.obiba.org/display/OPALDOC/Opal+R+and+Dat
 
 Then follow instructions to perform DataSHIELD analysis within Opal.
 
-See: [Opal DataSHIELD Usage](http://wiki.obiba.org/display/OPALDOCDEV/Opal+R+and+DataSHIELD+User+Guide#OpalRandDataSHIELDUserGuide-DataSHIELDUsage)
+See: [Opal DataSHIELD Usage](http://wiki.obiba.org/display/OPALDOC/Opal+R+and+DataSHIELD+User+Guide#OpalRandDataSHIELDUserGuide-DataSHIELDUsage)
 
