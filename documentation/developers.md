@@ -152,6 +152,28 @@ Example of [dsbase DESCRIPTION file](https://github.com/datashield/dsbase/blob/m
 
 Opal DataSHIELD administration offers the possibility to install a DataSHIELD-R package directly from the [DataSHIELD source repository](https://github.com/datashield). This is very convenient when testing the deployment of the package. This can be achieved by providing a Git reference (can be a branch name, a tag name or a commit number).
 
-See:
-* [Opal DataSHIELD Packages Administration](http://wiki.obiba.org/display/OPALDOC/DataSHIELD+Administration#DataSHIELDAdministration-DataSHIELDRepositories),
-* `dsadmin.install_package` function in *opaladmin* package.
+See: [Opal DataSHIELD Packages Administration](http://wiki.obiba.org/display/OPALDOC/DataSHIELD+Administration#DataSHIELDAdministration-DataSHIELDRepositories)
+
+You can also use R to administrate one or several Opal servers DataSHIELD configurations: *opaladmin* R package provides the Opal administration toolbox.
+
+	install.packages('opaladmin', repos=c(getOption('repos'), 'http://cran.obiba.org'), dependencies=TRUE)
+
+All the functions starting with `dsadmin.` are meant to administer DataSHIELD configuration. The following example installs a DataSHIELD-R package and publish its methods:
+
+	# Login in Opals
+	library(opaladmin)
+	o1<-opal.login('dsadmin1', 'password', 'http://opal1:8080')
+	o2<-opal.login('dsadmin2', 'password', 'http://opal2:8080')
+	opals<-list(o1, o2)
+
+	# Install dsbase package on R server from source repository (master branch)
+	dsadmin.install_package(opals, 'dsbase', ref='master')
+
+	# Configure datashield methods in opal
+	# Clean all previously published package methods
+	dsadmin.rm_package_methods(opals, 'dsbase')
+	# Publish dsbase package methods
+	dsadmin.set_package_methods(opals, 'dsbase')
+
+	# Add some specific methods based on scripts
+	dsadmin.set_method(opals, 'some_assign_script', path='/path/to/R/script', type='assign')
