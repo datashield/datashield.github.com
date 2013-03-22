@@ -36,7 +36,7 @@ See: [Opal R Server Set Up](http://wiki.obiba.org/display/OPALDOC/Opal+R+and+Dat
 
 An harmonized dataset must be prepared and each Opal server instances will receive data for different set of participants.
 
-See: [Opal Web Application User Guide](http://wiki.obiba.org/display/OPALDOCDEV/Opal+Web+Application+User+Guide)
+See: [Opal Web Application User Guide](http://wiki.obiba.org/display/OPALDOC/Opal+Web+Application+User+Guide)
 
 <a name="clientsetup"> </a>
 ### Client side set up
