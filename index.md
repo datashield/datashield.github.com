@@ -20,7 +20,7 @@ A DataSHIELD method open source implementation is available based on [R](http://
 Opal uses the R statistical environment to implement DataSHIELD. The implementation is made of the following components:
 
 * on the Data Computers:
-  * an Opal server,
+  * an Opal server (with its database(s)),
   * an R server.
 * on the Analysis Computer: an R client.
 
