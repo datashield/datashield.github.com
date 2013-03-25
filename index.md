@@ -26,3 +26,7 @@ Opal uses the R statistical environment to implement DataSHIELD. The implementat
 [Read more about DataSHIELD, R and Opal](http://wiki.obiba.org/display/OPALDOC/Opal+R+and+DataSHIELD+User+Guide)
 
 ![DataSHIELD Opal](images/opal-implementation.png "DataSHIELD Opal")
+
+### License
+
+DataSHIELD and OBiBa softwares are open source and made available under the [GPL3 licence](http://www.gnu.org/copyleft/gpl.html#gnu-license). DataSHIELD and OBiBa software are free of charge.
