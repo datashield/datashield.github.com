@@ -17,11 +17,12 @@ The following figure illustrates the basic IT infrastructure that underpins Data
 
 A DataSHIELD method open source implementation is available based on [R](http://www.r-project.org/) and [Opal](http://wiki.obiba.org/display/OPALDOC), the [OBiBa](http://obiba.org)'s data warehouse solution for biobanks.
 
-Opal uses the R statistical environment to implement DataSHIELD. The implementation is made of 3 components:
+Opal uses the R statistical environment to implement DataSHIELD. The implementation is made of the following components:
 
-* an Opal server
-* an R server (using Rserve)
-* an R client (installed on the Analysis Computer)
+* on the Data Computers:
+  * an Opal server,
+  * an R server.
+* on the Analysis Computer: an R client.
 
 ![DataSHIELD Opal](images/opal-implementation.png "DataSHIELD Opal")
 
