@@ -23,9 +23,14 @@ Opal uses the R statistical environment to implement DataSHIELD. The implementat
 * an R server (using Rserve)
 * a R client (installed on the Analysis Computer)
 
-[Read more about DataSHIELD, R and Opal](http://wiki.obiba.org/display/OPALDOC/Opal+R+and+DataSHIELD+User+Guide)
-
 ![DataSHIELD Opal](images/opal-implementation.png "DataSHIELD Opal")
+
+Opal's role is to:
+* authenticate and authorize a DataSHIELD user,
+* push data into R (server side),
+* control which methods can be executed in R (server side).
+
+[Read more about DataSHIELD, R and Opal](http://wiki.obiba.org/display/OPALDOC/Opal+R+and+DataSHIELD+User+Guide)
 
 ### License
 
