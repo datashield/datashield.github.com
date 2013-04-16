@@ -109,6 +109,10 @@ Use [Roxygen](http://roxygen.org) annotations to document your R code. The corre
 * generate the R manual pages,
 * generate entries in the `NAMESPACE` and `DESCRIPTION` files.
 
+To install *roxygen2* in the R console:
+
+	install.packages('roxygen2', repos=c(getOption('repos')), dependencies=TRUE)
+
 See: [RStudio Writing Package Documentation](http://www.rstudio.com/ide/docs/packages/documentation).
 
 We recommend to set the *Build* options of the RStudio project as follow:
