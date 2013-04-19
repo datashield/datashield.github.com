@@ -48,8 +48,9 @@ All the functions starting with `dsadmin.` are meant to administer DataSHIELD co
 	library(opaladmin)
 	o<-opal.login('dsadmin', 'password', 'https://some-opal-host:8443',opts=list(ssl.verifyhost=0,ssl.verifypeer=0,sslversion=3))
 
-	# Install dsbase package on R server
-	dsadmin.install_package(o, 'dsbase')
+	# Install datashield package and its dependencies on R server
+	# Publish all the corresponding aggregate and assign methods
+	dsadmin.install_package(o, 'datashield')
 
 	# Configure datashield methods in opal
 	# Clean all methods
