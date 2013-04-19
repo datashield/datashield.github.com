@@ -32,9 +32,9 @@ See: [Opal DataSHIELD Permissions](http://wiki.obiba.org/display/OPALDOC/DataSHI
 <a name="clientusage"> </a>
 ## Usage
 
-From a R console you will need to install the DataSHIELD client package you are interested in. For instance [dsbaseclient](https://github.com/datashield/dsbaseclient):
+From a R console you will need to install the DataSHIELD client package and its dependencies, [datashieldclient](https://github.com/datashield/datashieldclient):
 
-	install.packages('dsbaseclient', repos=c(getOption('repos'), 'http://cran.obiba.org'), dependencies=TRUE)
+	install.packages('datashieldclient', repos=c(getOption('repos'), 'http://cran.obiba.org'), dependencies=TRUE)
 
 Windows users will have to explicitly install package dependencies.
 
