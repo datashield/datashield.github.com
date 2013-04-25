@@ -187,9 +187,14 @@ All the functions starting with `dsadmin.` are meant to administer DataSHIELD co
 ### Release DataSHIELD-R Packages
 
 Releasing a package consists of the following steps:
-* tag the package source code in GitHub (the tagged code is read-only and will be used as a reference for package build),
-* increment the version number in the DESCRIPTION file (prepare for the next release),
+* tag the package source code with a version number in GitHub (the tagged code is read-only and will be used as a reference when building the package),
+* increment the version number in the *DESCRIPTION* file (prepare for the next release),
 * build a package from its source tag and deploy it in a CRAN (currently done by [OBiBa](http://cran.obiba.org/src/contrib)).
+
+<div class="alert">
+  <strong>Warning!</strong> 
+  As a convention, make sure corresponding packages on server and client sides have the same version number. This will facilitate compatibility checks.
+</div>
 
 The tagging procedure is to be done using the *git* command-line.
 
@@ -207,7 +212,7 @@ Then perform the tag operation:
 	# Propagate the new tag to GitHub
 	git push --tags
 
-Increment version number in the DESCRIPTION file so that development package does not conflict with the released one.
+Increment version number in the *DESCRIPTION* file so that development package does not conflict with the released one:
 
 	# Edit DESCRIPTION file with your favorite editor
 	vi DESCRIPTION
