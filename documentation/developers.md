@@ -15,6 +15,7 @@ tagline: "How to contribute to DataSHIELD"
   * [RStudio Project](#project)
   * [DataSHIELD-R Packages](#packages)
   * [Test DataSHIELD-R Packages](#testpackages)
+  * [Release DataSHIELD-R Packages](#releasepackages)
 
 <a name="setup"> </a>
 ## Set up
@@ -181,3 +182,65 @@ All the functions starting with `dsadmin.` are meant to administer DataSHIELD co
 
 	# Add some specific methods based on scripts
 	dsadmin.set_method(opals, 'some_assign_script', path='/path/to/R/script', type='assign')
+
+<a name="releasepackages"> </a>
+### Release DataSHIELD-R Packages
+
+Releasing a package consists of the following steps:
+* tag the package source code in GitHub (the tagged code is read-only and will be used as a reference for package build),
+* increment the version number in the DESCRIPTION file (prepare for the next release),
+* build a package from its source tag and deploy it in a CRAN (currently done by [OBiBa](http://cran.obiba.org/src/contrib)).
+
+The tagging procedure is to be done using the *git* command-line.
+
+First in order to make sure you are working on a clean workspace, clone the repository of the package:
+
+	# Clone package xxx
+	git clone https://github.com/datashield/xxx.git
+	cd xxx
+
+Then perform the tag operation:
+
+	# Tag the source code locally with the version number defined in the DESCRIPTION file (1.0 for instance)
+	git tag -a 1.0 -m "version 1.0"
+
+	# Propagate the new tag to GitHub
+	git push --tags
+
+Increment version number in the DESCRIPTION file so that development package does not conflict with the released one.
+
+	# Edit DESCRIPTION file with your favorite editor
+	vi DESCRIPTION
+	
+	# Commit changes locally
+	git commit -a -m "prepare version 1.1"
+	
+	# Propagate change to GitHub 
+	git push origin master
+
+See: [Learn Tagging on GitHub](http://learn.github.com/p/tagging.html)
+
+If you realize that there is an error in the source code before the release is official, it is still time to fix and re-tag the source code:
+
+	# Remove tag locally
+	git tag -d 1.0
+
+	# Propagate tag removal to GitHub
+	git push origin :refs/tags/1.0
+
+	# Reverse version in DESCRIPTION file
+	vi DESCRIPTION
+	
+	# Commit changes locally
+	git commit -a -m "revert to version 1.0"
+
+	# Edit and fix source code, commit and push changes to GitHub
+	...
+
+	# Redo tagging
+	...
+
+
+
+
+
