@@ -38,7 +38,7 @@ From a R console you will need to install the DataSHIELD client package and its 
 
 Windows users will have to explicitly install package dependencies.
 
-See: [Opal R Client Set Up](http://wiki.obiba.org/display/OPALDOC/Opal+R+and+DataSHIELD+User+Guide#OpalRandDataSHIELDUserGuide-ClientsideInstallation)
+See: [Opal R Client Set Up](http://wiki.obiba.org/display/OPALDOC/Opal+R+and+DataSHIELD+User+Guide#OpalRandDataSHIELDUserGuide-Client-sideInstallation)
 
 Then follow instructions to perform DataSHIELD analysis within Opal.
 

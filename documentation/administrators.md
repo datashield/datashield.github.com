@@ -23,7 +23,7 @@ See: [Opal Server Administrator Guide](http://wiki.obiba.org/display/OPALDOC/Opa
 
 The Opal server must be backed by a R server in which data will be pushed from Opal for being aggregated.
 
-See: [Opal R Server Set Up](http://wiki.obiba.org/display/OPALDOC/Opal+R+and+DataSHIELD+User+Guide#OpalRandDataSHIELDUserGuide-ServersideInstallation)
+See: [Opal R Server Set Up](http://wiki.obiba.org/display/OPALDOC/Opal+R+and+DataSHIELD+User+Guide#OpalRandDataSHIELDUserGuide-Server-sideInstallation)
 
 You have been granted DataSHIELD administrative permission in that Opal server.
 

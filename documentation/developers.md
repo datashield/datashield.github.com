@@ -33,7 +33,7 @@ See: [Opal Server Administrator Guide](http://wiki.obiba.org/display/OPALDOC/Opa
 
 Each Opal server instance must be backed by a R server in which data will be pushed from Opal for being aggregated.
 
-See: [Opal R Server Set Up](http://wiki.obiba.org/display/OPALDOC/Opal+R+and+DataSHIELD+User+Guide#OpalRandDataSHIELDUserGuide-ServersideInstallation)
+See: [Opal R Server Set Up](http://wiki.obiba.org/display/OPALDOC/Opal+R+and+DataSHIELD+User+Guide#OpalRandDataSHIELDUserGuide-Server-sideInstallation)
 
 An harmonized dataset must be prepared and each Opal server instances will receive data for different set of participants.
 
@@ -66,7 +66,7 @@ As a developer you will need to access to some advanced features of Opal, in ord
 
 	install.packages('opaladmin', repos=c(getOption('repos'), 'http://cran.obiba.org'), dependencies=TRUE)
 
-See: [Opal R Client Set Up](http://wiki.obiba.org/display/OPALDOC/Opal+R+and+DataSHIELD+User+Guide#OpalRandDataSHIELDUserGuide-ClientsideInstallation)
+See: [Opal R Client Set Up](http://wiki.obiba.org/display/OPALDOC/Opal+R+and+DataSHIELD+User+Guide#OpalRandDataSHIELDUserGuide-Client-sideInstallation)
 
 <a name="flow"> </a>
 ## Development Workflow
