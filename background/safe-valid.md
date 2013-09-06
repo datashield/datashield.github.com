@@ -5,6 +5,12 @@ description: ""
 ---
 {% include JB/setup %}
 
+<ul class="pager">
+  <li class="previous">
+    <a href="/background">&larr; Background</a>
+  </li>
+</ul>
+
 The validity of adopting a DataSHIELD approach to pooled analysis when ethico-legal constraints prohibit the release of individual level data from at least one of the collaborating studies depends on two preconditions. 
 
 1. The pooled analysis that is required must be able to be carried out using a parallelized approach based on a series of local analyses that can be linked together by passing analytic instructions and summary statistics between a single AC and a series of DCs. 
@@ -38,3 +44,9 @@ For the future, the DataSHIELD team aims to develop middleware that will monitor
 Having said all of this, it must be re-emphasised that analogous concerns already apply across a wide variety of settings where third parties require access to secure data (as now required by most major funders); regardless whether pooling is required or not. In other words, these issues are certainly not specific to DataSHIELD, it is just that it is important that if DataSHIELD is to be used it must be implemented in a manner that minimises such risks. Such a philosophy has already been adopted in relation to providing access to biomedical data from the British 1958, 1970 and Millennium Birth Cohorts by the National Access Committee (see http://www2.le.ac.uk/projects/birthcohort ). Because they contain all of the people born in Great Britain during one week in 1958 and in 1970, the data from the first two of these studies are particularly susceptible to a variety of attacks from malevolent users, and yet the 1958 Birth Cohort has successfully functioned as a premier provider of large-scale anonymised individual-level biomedical data since 2003. In order to minimise the risk of misuse, all users are required to sign a confidentiality guarantee (see [section 3g ‘Security’](http://www2.le.ac.uk/projects/birthcohort/document-downloads/POLICY.DOCUMENT.120609.pdf)) and data sets are constructed in ways that minimise the risk that someone might consider trying to misuse the data (for example, every time a new data award is made, data files are re-indexed with new IDs that have not previously been used, and the data sets are reordered – these manoeuvres greatly reduce the risk that two different users will link information together that has not been countenanced by the access committee and might therefore present a particular security risk). But the access committee is entirely realistic; it is recognised that the risk can never be entirely negated. Nevertheless, despite the fact that hundreds of research groups across the world have used the data over the last 7 years, the handful of problems that have come to light have all related to naive users mistakenly – and unsuccessfully - trying to do things that they were not aware that they were not allowed to do.
 
 In light of the foregoing, and provided it is implemented carefully and with the stated safeguards, it is difficult to see how DataSHIELD could significantly increase the opportunities for deliberately misusing data for those few miscreants that intend to do so regardless. That being the case, it is not at all unreasonable to view the ethico-legal implications of DataSHIELD to be precisely analogous to those of a conventional SLMA. The type of information that is transmitted in both settings (analytic instructions and non-sensitive summary statistics) is effectively equivalent. And, in both cases individual-level data never leave their host study. This implies that if an ethics or governance committee interprets the wording of the ethico-legal documentation of a particular study as prohibiting that study from sharing the results of study-specific analyses with third parties as part of an SLMA, that study should also be viewed as being unsuitable for DataSHIELD. On the other hand, if the ethico-legal documentation is judged to indicate that a study is able to participate in a conventional collaborative meta-analysis (SLMA), then logically, DataSHIELD should also be viewed as acceptable - unless, there is a specific (and unusual) reason to believe that there is a significant risk that DataSHIELD will deliberately be misused in a manner that will not be prevented by, or detected under, the protocol safeguards described above (no such approach has, as yet, been identified).  
+
+<ul class="pager">
+  <li class="previous">
+    <a href="/background">&larr; Background</a>
+  </li>
+</ul>

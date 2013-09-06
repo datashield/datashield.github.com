@@ -73,7 +73,7 @@ Email: yannick.marcon@obiba.org
  
 Tel: 
 
-Email: 
+Email: isabel.fortier@mail.mcgill.ca
  
 ## Oslo (Norwegian Institute of Public Health)
  
