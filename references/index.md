@@ -27,6 +27,6 @@ SUTTON, A. J., KENDRICK, D. & COUPLAND, C. A. 2008. Meta-analysis of individual-
 
 WALLACE, S., LAZOR, S. & KNOPPERS, B. M. 2008. Consent and population genomics: The creation of generic tools. Submitted.
 
-WOLFSON, M., WALLACE, S. E., MASCA, N., ROWE, G., SHEEHAN, N. A., FERRETTI, V., LAFLAMME, P., TOBIN, M. D., MACLEOD, J., LITTLE, J., FORTIER, I., KNOPPERS, B. M. & BURTON, P. R. 2010. DataSHIELD: resolving a conflict in contemporary bioscience--performing a pooled analysis of individual-level data without sharing the data. Int J Epidemiol, 39, 1372-1382.
+WOLFSON, M., WALLACE, S. E., MASCA, N., ROWE, G., SHEEHAN, N. A., FERRETTI, V., LAFLAMME, P., TOBIN, M. D., MACLEOD, J., LITTLE, J., FORTIER, I., KNOPPERS, B. M. & BURTON, P. R. 2010. [DataSHIELD: resolving a conflict in contemporary bioscience--performing a pooled analysis of individual-level data without sharing the data](http://ije.oxfordjournals.org/content/39/5/1372.abstract). Int J Epidemiol, 39, 1372-1382.
 
 WONG, M. Y., DAY, N. E., LUAN, J. A., CHAN, K. P. & WAREHAM, N. J. 2003. The detection of gene-environment interaction for continuous traits: should we deal with measurement error by bigger studies or better measurement? Int J Epidemiol, 32, 51-7.
