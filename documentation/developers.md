@@ -183,6 +183,12 @@ All the functions starting with `dsadmin.` are meant to administer DataSHIELD co
 	# Add some specific methods based on scripts
 	dsadmin.set_method(opals, 'some_assign_script', path='/path/to/R/script', type='assign')
 
+	# Get the Assign methods installed in one Opal
+	dsadmin.get_methods(o1, type="assign")
+
+	# Get a package description from one Opal
+	dsadmin.package_description(o1, "dsmodelling")
+
 <a name="releasepackages"> </a>
 ### Release DataSHIELD-R Packages
 
