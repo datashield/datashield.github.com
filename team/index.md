@@ -63,7 +63,7 @@ Tel: 416-673-8509
 
 Email:  vincent.ferretti@oicr.on.ca
  
-#### Yannick Macon
+#### Yannick Marcon
  
 Tel: 
 
