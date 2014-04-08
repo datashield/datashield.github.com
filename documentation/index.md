@@ -22,11 +22,17 @@ In addition, it is recommended that DataSHIELD should be implemented with a numb
 
 You are:
 
-* A DataSHIELD user, in charge of performing distributed statistical analysis using DataSHIELD <a href="users.html" class="btn btn-primary">DataSHIELD Users Documentation</a>
+* A DataSHIELD user, in charge of performing distributed statistical analysis using DataSHIELD 
 
-* A DataSHIELD administrator, responsible for DataSHIELD deployment in your organization <a href="administrators.html" class="btn btn-primary">DataSHIELD Administrators Documentation</a>
+<a href="users.html" class="btn btn-primary">DataSHIELD Users Documentation</a>
 
-* A DataSHIELD developer, willing to contribute to DataSHIELD code <a href="developers.html" class="btn btn-primary">DataSHIELD Developers Documentation</a>
+* A DataSHIELD administrator, responsible for DataSHIELD deployment in your organization
+
+<a href="administrators.html" class="btn btn-primary">DataSHIELD Administrators Documentation</a>
+
+* A DataSHIELD developer, willing to contribute to DataSHIELD code
+
+<a href="developers.html" class="btn btn-primary">DataSHIELD Developers Documentation</a>
 
 
 ![DataSHIELD Opal Set up](../images/datashield-setup.png "DataSHIELD Opal Set up")
