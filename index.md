@@ -23,6 +23,7 @@ The following figure illustrates the basic IT infrastructure that underpins Data
 a computer server hosting a database (Opal), a statistical programming environment (R) and DataSHIELD R libraries installed on the servers and on the client computer. Opal is a core database
 application for biobanks and epidemiological studies developed by the Maelstrom Research group in collaboration with OBiBa, an international software development project aimed at building open
 source software for biobanks. 
+
 * on the Data Computers:
   * an Opal server (with its database(s)),
   * an R server.
@@ -31,6 +32,7 @@ source software for biobanks.
 ![DataSHIELD Opal](images/opal-implementation.png "DataSHIELD Opal")
 
 Opal's role is to:
+
 * authenticate and authorize DataSHIELD users,
 * push data into R (server side),
 * control which methods can be executed in R (server side).
