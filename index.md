@@ -11,14 +11,18 @@ DataSHIELD ([Wolfson et al., 2010](http://ije.oxfordjournals.org/content/39/5/13
 
 ### DataSHIELD IT Infrastructure
 
-The following figure illustrates the basic IT infrastructure that underpins DataSHIELD; it reflects a hypothetical implementation based on a pooled analysis involving data from six studies. The individual-level data that provide the basis of the analysis remain on *data computers* (DCs) at their home bases. An additional computer is identified as the *analysis computer* (AC). This is the computer on which the primary statistician will type the commands to enact and control the pooled analysis.
+The following figure illustrates a typical DataSHIELD setting for a pooled individual-level analysis; it reflects a hypothetical implementation based on a pooled analysis involving data from six studies. The individual-level data that provide the basis of the analysis remain on *data computers* (DCs) at their home bases. An additional computer is identified as the *analysis computer* (AC). This is the computer on which the primary statistician will type the commands to enact and control the pooled analysis.
 
 ![DataSHIELD](images/overviewSixStudies.png "DataSHIELD")
 
 A DataSHIELD method open source implementation is available based on [R](http://www.r-project.org/) and [Opal](http://wiki.obiba.org/display/OPALDOC), the [OBiBa](http://obiba.org)'s data warehouse solution for biobanks.
 
-Opal uses the R statistical environment to implement DataSHIELD. The implementation is made of the following components:
+### DataSHIELD IT Infrastructure
 
+The following figure illustrates the basic IT infrastructure that underpins DataSHIELD. The IT infrastructure required to carry out a DataSHIELD analysis comprises three main components:
+a computer server hosting a database (Opal), a statistical programming environment (R) and DataSHIELD R libraries installed on the servers and on the client computer. Opal is a core database
+application for biobanks and epidemiological studies developed by the Maelstrom Research group in collaboration with OBiBa, an international software development project aimed at building open
+source software for biobanks. 
 * on the Data Computers:
   * an Opal server (with its database(s)),
   * an R server.
