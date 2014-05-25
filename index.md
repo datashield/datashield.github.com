@@ -9,7 +9,7 @@ DataSHIELD ([Wolfson et al., 2010](http://ije.oxfordjournals.org/content/39/5/13
 
 [Read Using DataSHIELD](/documentation)
 
-### DataSHIELD IT Infrastructure
+### Overview of a DataSHIELD setting
 
 The following figure illustrates a typical DataSHIELD setting for a pooled individual-level analysis; it reflects a hypothetical implementation based on a pooled analysis involving data from six studies. The individual-level data that provide the basis of the analysis remain on *data computers* (DCs) at their home bases. An additional computer is identified as the *analysis computer* (AC). This is the computer on which the primary statistician will type the commands to enact and control the pooled analysis.
 
