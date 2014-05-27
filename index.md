@@ -17,7 +17,7 @@ The following figure illustrates a typical DataSHIELD setting for a pooled indiv
 
 A DataSHIELD method open source implementation is available based on [R](http://www.r-project.org/) and [Opal](http://wiki.obiba.org/display/OPALDOC), the [OBiBa](http://obiba.org)'s data warehouse solution for biobanks.
 
-### DataSHIELD IT Infrastructure
+### DataSHIELD IT infrastructure
 
 The following figure illustrates the basic IT infrastructure that underpins DataSHIELD. The IT infrastructure required to carry out a DataSHIELD analysis comprises three main components:
 a computer server hosting a database (Opal), a statistical programming environment (R) and DataSHIELD R libraries installed on the servers and on the client computer. Opal is a core database
@@ -36,6 +36,14 @@ Opal's role is to:
 * authenticate and authorize DataSHIELD users,
 * push data into R (server side),
 * control which methods can be executed in R (server side).
+
+### DataSHIELD test environment
+DataSHIELD can be installed locally to run test or explorative analyses using synthetic. The figure below shows graphically a DataSHIELD test environment as set up on a computer. 
+The full guide to set up such environment can be downloaded from [here](https://drive.google.com/file/d/0B95Jr-3GUydRNC13NHdLc3VfMHc/edit?usp=sharing).
+
+![DataSHIELD](images/testDS.png "DataSHIELD")
+
+
 
 [Read more about DataSHIELD, R and Opal](http://wiki.obiba.org/display/OPALDOC/Opal+R+and+DataSHIELD+User+Guide)
 
